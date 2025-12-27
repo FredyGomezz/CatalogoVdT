@@ -241,7 +241,11 @@ window.exportPDF = function () {
   doc.setFontSize(11);
   doc.text(`Usuario: ${usuarioActivo}`, 10, y);
   y += 10;
-
+  
+  doc.setFontSize(11);
+  doc.text(`Fecha y hora: ${new Date().toLocaleString()}`, 10, y);
+  y += 10;
+  
   let total = 0;
 
   Object.keys(carrito).forEach((i, index) => {
