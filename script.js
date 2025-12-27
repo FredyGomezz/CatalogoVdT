@@ -239,11 +239,11 @@ window.exportPDF = function () {
   y += 10;
 
   doc.setFontSize(11);
-  doc.text(`Usuario: ${usuarioActivo}`, 10, y);
+  doc.text("Usuario: ${usuarioActivo}", 10, y);
   y += 10;
   
   doc.setFontSize(11);
-  doc.text(`Fecha y hora: ${new Date().toLocaleString()}`, 10, y);
+  doc.text("Fecha/hora: ${new Date().toLocaleString()}`, 10, y);
   y += 10;
   
   let total = 0;
